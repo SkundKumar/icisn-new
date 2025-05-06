@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Lora:wght@300;400&display=swap');
+
+@layer base {
+  :root {
+    --color-1: 220, 90%, 56%;
+  --color-2: 340, 90%, 56%;
+  --color-3: 40, 90%, 56%;
+  --color-4: 120, 90%, 56%;
+  --color-5: 260, 90%, 56%;
+    /* 🎓 ACADEMIC & PROFESSIONAL COLORS */
+    --background: hsl(220, 50%, 96%); /* Light Grayish Blue */
+    --foreground: hsl(220, 100%, 20%); /* Deep Navy Blue */
+    
+    /* 📄 CARD & POPOVER */
+    --card: hsl(0, 0%, 100%); /* Pure White */
+    --card-foreground: hsl(220, 100%, 20%);
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(220, 100%, 20%);
+
+    /* 🌊 PRIMARY - INTELLIGENT & INNOVATIVE */
+    --primary: hsl(178, 100%, 40%); /* Teal Blue */
+    --primary-foreground: hsl(0, 0%, 100%); /* White */
+    
+    /* 🎓 SECONDARY - PRESTIGE & STABILITY */
+    --secondary: hsl(220, 100%, 20%); /* Deep Navy Blue */
+    --secondary-foreground: hsl(0, 0%, 100%);
+
+    /* 🔄 MUTED COLORS FOR BACKGROUND ELEMENTS */
+    --muted: hsl(220, 50%, 96%);
+    --muted-foreground: hsl(220, 80%, 20%);
+
+    /* 🔥 ACCENT COLOR FOR HIGHLIGHTS */
+    --accent: hsl(16, 100%, 65%); /* Bright Orange */
+    --accent-foreground: hsl(0, 0%, 100%);
+
+    /* ❗ ERROR / DESTRUCTIVE COLORS */
+    --destructive: hsl(16, 100%, 65%);
+    --destructive-foreground: hsl(0, 0%, 100%);
+
+    /* 📏 BORDERS & FORMS */
+    --border: hsl(220, 100%, 20%);
+    --input: hsl(220, 100%, 20%);
+    
+    /* 🔵 RING COLOR FOR FOCUS */
+    --ring: hsl(178, 100%, 40%);
+  }
+
+  /* 🌙 DARK MODE – INTELLIGENT & PROFESSIONAL */
+  .dark {
+    --background: hsl(220, 40%, 10%); /* Deep Navy Background */
+    --foreground: hsl(220, 50%, 96%);
+
+    --card: hsl(220, 30%, 15%);
+    --card-foreground: hsl(220, 50%, 96%);
+    --popover: hsl(220, 30%, 15%);
+    --popover-foreground: hsl(220, 50%, 96%);
+
+    --primary: hsl(178, 100%, 50%);
+    --primary-foreground: hsl(0, 0%, 100%);
+    --secondary: hsl(220, 100%, 25%);
+    --secondary-foreground: hsl(0, 0%, 100%);
+    
+    --muted: hsl(220, 30%, 20%);
+    --muted-foreground: hsl(220, 60%, 80%);
+
+    --accent: hsl(16, 100%, 65%);
+    --accent-foreground: hsl(0, 0%, 100%);
+
+    --destructive: hsl(16, 100%, 55%);
+    --destructive-foreground: hsl(0, 0%, 100%);
+
+    --border: hsl(220, 100%, 25%);
+    --input: hsl(220, 100%, 25%);
+    --ring: hsl(178, 100%, 50%);
+  }
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-lora); /* Elegant serif */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+}
+
+
+
+
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .bento-span-4 {
+    grid-column: span 4;
+  }
+
+  .bento-span-6 {
+    grid-column: span 6;
+  }
+
+  .bento-span-8 {
+    grid-column: span 8;
+  }
+
+  .bento-span-12 {
+    grid-column: span 12;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-in-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slow-move {
+  0% { transform: scale(1); border-color: rgba(0, 0, 0, 0.1); }
+  50% { transform: scale(1.02); border-color: rgba(0, 0, 0, 0.2); }
+  100% { transform: scale(1); border-color: rgba(0, 0, 0, 0.1); }
+}
+
+.animate-slow-move {
+  animation: slow-move 6s ease-in-out infinite;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
