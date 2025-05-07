@@ -62,7 +62,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            REV, Vietnam
+            EWUT, Vietnam
           </motion.h2>
           <motion.div
             className="mt-6 inline-block rounded-full border border-white/30 bg-black/40 px-6 py-3 md:px-6 md:py-3 backdrop-blur-md"
