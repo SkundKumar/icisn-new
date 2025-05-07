@@ -59,7 +59,7 @@ export default function UniversitySection() {
   className=" relative h-[400px] overflow-hidden rounded-lg"
 >
 <Image
-  src="https://en.REV.org.vn/sites/default/files/styles/img_659_545/public/superadmin/anh_bai_viet/upcoming-training-program-workshop-for-vietnams-semiconductor-industry-1712938522.jpg?itok=KtrNUFB5"
+  src="https://eaut.edu.vn/wp-content/uploads/2023/03/6-jpg.webp"
   alt="EAUT"
   fill
   className="absolute inset-0 object-cover"
