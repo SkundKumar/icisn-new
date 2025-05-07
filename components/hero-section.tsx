@@ -62,7 +62,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            EWUT, Vietnam
+            EAUT, Vietnam
           </motion.h2>
           <motion.div
             className="mt-6 inline-block rounded-full border border-white/30 bg-black/40 px-6 py-3 md:px-6 md:py-3 backdrop-blur-md"
@@ -71,7 +71,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">
-            The Radio and Electronics Association of Vietnam , 21-22 March, 2026
+            East Asia University of Technology (EAUT), 21-22 March, 2026
             </p>
           </motion.div>
         </div>

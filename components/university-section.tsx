@@ -48,7 +48,7 @@ export default function UniversitySection() {
           ref={titleRef}
           className="opacity-0 text-3xl font-bold tracking-tighter text-center sm:text-4xl md:text-6xl"
         >
-          THE RADIO AND ELECTRONICS ASSOCIATION OF VIETNAM (EWUT)
+          East Asia University of Technology (EAUT)
         </h2>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 items-center">
@@ -60,7 +60,7 @@ export default function UniversitySection() {
 >
 <Image
   src="https://en.REV.org.vn/sites/default/files/styles/img_659_545/public/superadmin/anh_bai_viet/upcoming-training-program-workshop-for-vietnams-semiconductor-industry-1712938522.jpg?itok=KtrNUFB5"
-  alt="EWUT"
+  alt="EAUT"
   fill
   className="absolute inset-0 object-cover"
 />
@@ -69,25 +69,25 @@ export default function UniversitySection() {
 
           <div ref={textRef} className="opacity-0 space-y-4 text-muted-foreground">
             <p>
-            The Radio and Electronics Association of Vietnam (EWUT) is an official grouping of professors, researchers, engineers, technologists, technicians, and administrators working in Vietnam in domains such as electronics, control systems, measurements, signal and image processing, telecommunications, and networks. These activities started in 1965, and the name EWUT was officially and legally recognized by the Vietnamese Government in 1988. 
+            The Radio and Electronics Association of Vietnam (EAUT) is an official grouping of professors, researchers, engineers, technologists, technicians, and administrators working in Vietnam in domains such as electronics, control systems, measurements, signal and image processing, telecommunications, and networks. These activities started in 1965, and the name EAUT was officially and legally recognized by the Vietnamese Government in 1988. 
             </p>
 
-            <h3 className="text-xl font-semibold mt-6">Core values of EWUT:</h3>
+            <h3 className="text-xl font-semibold mt-6">Core values of EAUT:</h3>
             <ul className="list-disc pl-5 space-y-2">
               <li>
-              <strong></strong>	EWUT covers a large spectrum of activities including organizing seminars and conferences, publishing popular EWUTiews, presenting national research programs, and participating in building the national strategy of development for the future of Information Technology in Vietnam. 
+              <strong></strong>	EAUT covers a large spectrum of activities including organizing seminars and conferences, publishing popular EAUTiews, presenting national research programs, and participating in building the national strategy of development for the future of Information Technology in Vietnam. 
               </li>
               <li>
-              <strong> </strong>	EWUT presents the Scientific and Technological Electronics and Telecommunications Product Award (EWUT Award) to honor Vietnamese scientists and research groups whose products have high practical significance, creativity, and innovation. 
+              <strong> </strong>	EAUT presents the Scientific and Technological Electronics and Telecommunications Product Award (EAUT Award) to honor Vietnamese scientists and research groups whose products have high practical significance, creativity, and innovation. 
               </li>
            
             </ul>
 
             <p className="mt-4">
-              <strong>Initiatives:</strong>  In collaboration with Hanoi University of Science and Technology (HUST), EWUT is organizing a Workshop titled "Training Program for the Semiconductor IC Industry until 2030 - Challenges and Solutions" to support the Government's interest in advancing the semiconductor chip industry in Vietnam.
+              <strong>Initiatives:</strong>  In collaboration with Hanoi University of Science and Technology (HUST), EAUT is organizing a Workshop titled "Training Program for the Semiconductor IC Industry until 2030 - Challenges and Solutions" to support the Government's interest in advancing the semiconductor chip industry in Vietnam.
             </p>
             <p>
-              <strong>Core Values and Mission:</strong> EWUT is committed to promoting international cooperation to integrate Vietnam with the outside world. The association aims to help Vietnamese researchers in Electronics and Communications get in touch with their international colleagues and to enhance the quality of the Vietnamese research community.
+              <strong>Core Values and Mission:</strong> EAUT is committed to promoting international cooperation to integrate Vietnam with the outside world. The association aims to help Vietnamese researchers in Electronics and Communications get in touch with their international colleagues and to enhance the quality of the Vietnamese research community.
             </p>
           </div>
         </div>
