@@ -69,25 +69,37 @@ export default function UniversitySection() {
 
           <div ref={textRef} className="opacity-0 space-y-4 text-muted-foreground">
             <p>
-            The Radio and Electronics Association of Vietnam (EAUT) is an official grouping of professors, researchers, engineers, technologists, technicians, and administrators working in Vietnam in domains such as electronics, control systems, measurements, signal and image processing, telecommunications, and networks. These activities started in 1965, and the name EAUT was officially and legally recognized by the Vietnamese Government in 1988. 
+            The East Asia University of Technology (EAUT) is a multidisciplinary educational institution in Vietnam focusing on areas such as business management, information technology, electrical-electronics engineering technology, and construction engineering. EAUT officially began enrolling and training students for College and Undergraduate programs in the 2015-2016 academic year. 
             </p>
 
             <h3 className="text-xl font-semibold mt-6">Core values of EAUT:</h3>
             <ul className="list-disc pl-5 space-y-2">
               <li>
-              <strong></strong>	EAUT covers a large spectrum of activities including organizing seminars and conferences, publishing popular EAUTiews, presenting national research programs, and participating in building the national strategy of development for the future of Information Technology in Vietnam. 
+              <strong></strong>	EAUT aims to become one of the leading universities in Vietnam and in the region, gathering a team of reputable lecturers including Professors, Associate Professors, and Doctors who have taught at large domestic and international universities. 
               </li>
               <li>
-              <strong> </strong>	EAUT presents the Scientific and Technological Electronics and Telecommunications Product Award (EAUT Award) to honor Vietnamese scientists and research groups whose products have high practical significance, creativity, and innovation. 
+              <strong> </strong>	EAUT is committed to providing high-quality education and research opportunities that have practical significance, creativity, and innovation within Vietnam's developing technological landscape. 
               </li>
            
             </ul>
 
             <p className="mt-4">
-              <strong>Initiatives:</strong>  In collaboration with Hanoi University of Science and Technology (HUST), EAUT is organizing a Workshop titled "Training Program for the Semiconductor IC Industry until 2030 - Challenges and Solutions" to support the Government's interest in advancing the semiconductor chip industry in Vietnam.
+              <strong>Initiatives:</strong>  EAUT is applying modern teaching methods with advanced textbooks currently used in Vietnam and other developed industrial countries, with the aim to train highly qualified specialists to meet real industry needs. 
             </p>
             <p>
-              <strong>Core Values and Mission:</strong> EAUT is committed to promoting international cooperation to integrate Vietnam with the outside world. The association aims to help Vietnamese researchers in Electronics and Communications get in touch with their international colleagues and to enhance the quality of the Vietnamese research community.
+              <strong>Core Values and Mission:</strong> EAUT is committed to promoting international cooperation to integrate Vietnam with the outside world. The university aims to help Vietnamese students and researchers connect with international colleagues and to enhance the quality of Vietnamese education and research communities.
+            </p>
+            <p className="mt-4">
+              <strong>Facilities and Campus:</strong> 
+              <ul className="mt-4">
+                <li>
+                •	The university has built facilities on an 8-hectare campus at Vo Cuong Ward, Bac Ninh City, Bac Ninh Province, including a 3-floor building with an area of 6,000m². 
+•	EAUT provides dormitory facilities to serve students from other regions.
+                </li>
+                <li className="mt-2">
+                •	EAUT provides dormitory facilities to serve students from other regions.
+                </li>
+              </ul>
             </p>
           </div>
         </div>
