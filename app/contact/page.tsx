@@ -28,7 +28,7 @@ export default function ContactPage() {
             <CardTitle>Contact Information</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="flex items-start space-x-4">
+            {/*<div className="flex items-start space-x-4">
               <Phone className="h-5 w-5 mt-0.5 text-muted-foreground" />
               <div>
                 <h3 className="font-semibold">Phone</h3>
@@ -37,20 +37,22 @@ export default function ContactPage() {
             </div>
 
             <div className="flex items-start space-x-4">
-              <Mail className="h-5 w-5 mt-0.5 text-muted-foreground" />
+             <Mail className="h-5 w-5 mt-0.5 text-muted-foreground" />
               <div>
                 <h3 className="font-semibold">Email</h3>
                 <p>nguyenlinh79.haui@gmail.com</p>
               </div>
-            </div>
+            </div>*/}
 
             <div className="flex items-start space-x-4">
               <MapPin className="h-5 w-5 mt-0.5 text-muted-foreground" />
               <div>
                 <h3 className="font-semibold">Address</h3>
                 <p>
-                  REV
-                 
+                East Asia University of Technology
+Practical training facility
+Establishment Decision No.: 1777/QD-TTg
+Trinh Van Bo Street, Nam Tu Liem, Hanoi
                 </p>
               </div>
             </div>

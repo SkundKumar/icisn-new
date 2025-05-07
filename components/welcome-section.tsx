@@ -41,7 +41,7 @@ export default function WelcomeSection() {
         
         <div ref={textRef} className="opacity-0 mt-8 max-w-3xl mx-auto space-y-4 text-muted-foreground">
           <p>
-            Hanoi University of Industry is organizing two days The fifth International Conference on Intelligent
+            East Asia University of Technology is organizing two days The fifth International Conference on Intelligent
             Systems & Networks (ICISN 2026) on 22-23 March 2026. The conference will focus on the Intelligent Systems
             and Networks along with then-current dependency in line with security and the latest technologies.
           </p>
