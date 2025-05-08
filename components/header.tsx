@@ -46,14 +46,14 @@ export default function Header() {
         <img className="h-14 w-16 object-cover rounded-full" src="/uni.png" alt="" />
           <img className="h-14 w-14 object-cover rounded-full" src="/logo.png" alt="" />
           <Link href="/" className="flex items-center space-x-2 " onClick={() => setIsOpen(false)}>
-            <span
-              className={cn(
-                "text-2xl font-bold tracking-tighter font-playfair",
-                scrolled || pathname !== "/" ? "text-black" : "text-white"
-              )}
-            >
-              ICISN
-            </span>
+          <span
+  className={cn(
+    "hidden md:block text-2xl font-bold tracking-tighter font-playfair",
+    scrolled || pathname !== "/" ? "text-black" : "text-white"
+  )}
+>
+  ICISN
+</span>
           </Link>
 
           <nav className="hidden md:flex space-x-6">
