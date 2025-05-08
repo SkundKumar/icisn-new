@@ -13,7 +13,7 @@ const navItems = [
   { name: "KEYNOTE SPEAKERS", path: "#" },
   { name: "CALL FOR PAPERS", path: "/call-for-papers" },
   { name: "FOR ATTENDEES", path: "/for-attendees" },
-  { name: "HISTORY", path: "#" },
+  { name: "HISTORY", path: "/history" },
   { name: "CONTACT US", path: "/contact" },
 ];
 
@@ -38,9 +38,13 @@ export default function Header() {
         scrolled || pathname !== "/" ? "bg-white/80 shadow-sm" : "bg-transparent"
       )}
     >
+      
       <div className="container mx-auto px-4 md:px-6">
+        
+       
         <div className="flex h-20 items-center justify-around">
-          <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
+          <img className="h-14 w-14 object-cover rounded-full" src="/logo.png" alt="" />
+          <Link href="/" className="flex items-center space-x-2 " onClick={() => setIsOpen(false)}>
             <span
               className={cn(
                 "text-2xl font-bold tracking-tighter font-playfair",

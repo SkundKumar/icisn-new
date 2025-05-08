@@ -233,9 +233,9 @@ const [activeTab, setActiveTab] = useState("registration");
 
       <h3 className="text-xl font-semibold mt-4">General Requirements</h3>
       <ul className="list-disc pl-5 space-y-1">
-        <li>🔹 Language: All submissions must be in English.</li>
-        <li>🔹 Originality: Submissions must be original and not under review elsewhere.</li>
-        <li>🔹 Formatting: Follow the provided templates and guidelines.</li>
+        <li> Language: All submissions must be in English.</li>
+        <li> Originality: Submissions must be original and not under review elsewhere.</li>
+        <li> Formatting: Follow the provided templates and guidelines.</li>
       </ul>
 
       <h3 className="text-xl font-semibold mt-4">Submission Process</h3>
@@ -336,7 +336,7 @@ const [activeTab, setActiveTab] = useState("registration");
           <tbody>
             <tr className="border-t">
               <td className="p-3">Paper Submission Deadline</td>
-              <td className="p-3">22 November 2026, 22 December 2026</td>
+              <td className="p-3">22 November 2025, 14 January 2026</td>
             </tr>
             <tr className="border-t">
               <td className="p-3">Papers Decision</td>
@@ -374,6 +374,8 @@ const [activeTab, setActiveTab] = useState("registration");
       </p>
 
       <p className="mt-4"><strong>Contact:</strong> For any inquiries, please reach out via email or phone.</p>
+      <p className=""><strong>Phone:</strong> <br /> <strong>Email:</strong></p>
+      
     </CardContent>
   </Card>
 </TabsContent>

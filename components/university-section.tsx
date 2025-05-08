@@ -67,7 +67,7 @@ export default function UniversitySection() {
 </motion.div>
           </div>
 
-          <div ref={textRef} className="opacity-0 space-y-4 text-muted-foreground">
+          <div ref={textRef} className=" text-justify opacity-0 space-y-4 text-muted-foreground">
             <p>
             The East Asia University of Technology (EAUT) is a multidisciplinary educational institution in Vietnam focusing on areas such as business management, information technology, electrical-electronics engineering technology, and construction engineering. EAUT officially began enrolling and training students for College and Undergraduate programs in the 2015-2016 academic year. 
             </p>
@@ -94,7 +94,7 @@ export default function UniversitySection() {
               <ul className="mt-4">
                 <li>
                 •	The university has built facilities on an 8-hectare campus at Vo Cuong Ward, Bac Ninh City, Bac Ninh Province, including a 3-floor building with an area of 6,000m². 
-•	EAUT provides dormitory facilities to serve students from other regions.
+
                 </li>
                 <li className="mt-2">
                 •	EAUT provides dormitory facilities to serve students from other regions.

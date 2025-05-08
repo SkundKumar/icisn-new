@@ -39,19 +39,19 @@ export default function WelcomeSection() {
           WELCOME TO ICISN 2026
         </h2>
         
-        <div ref={textRef} className="opacity-0 mt-8 max-w-3xl mx-auto space-y-4 text-muted-foreground">
-          <p>
+        <div ref={textRef} className="  opacity-0 mt-8 max-w-3xl mx-auto space-y-4 text-muted-foreground">
+          <p className="text-justify" >
             East Asia University of Technology is organizing two days The fifth International Conference on Intelligent
             Systems & Networks (ICISN 2026) on 22-23 March 2026. The conference will focus on the Intelligent Systems
             and Networks along with then-current dependency in line with security and the latest technologies.
           </p>
-          <p>
+          <p className="text-justify">
             The growing demand for networks, various generation mobility, security benchmarks, and providing the
             Intelligent secure System to customers is the demand of time. The network is indeed greater in demand and
             thus it's the hour of need to make a broad discussion on this domain. In the past couple of years, amazing
             developments can be seen from 2G to 5G, Security, and wire to wireless developments.
           </p>
-          <p>
+          <p className="text-justify"> 
             We would like to invite you to contribute your unpublished research work and participate in ICISN 2026. The
             two days international technical forum will allow you to interact with numbers of National and International
             delegates. The ICISN 2026 offers a rich program, including keynote speeches, regular presentations,
@@ -59,7 +59,7 @@ export default function WelcomeSection() {
             event. It brings together experts from industry, governments, and academia, experienced in engineering,
             design, and research.
           </p>
-          <p>
+          <p className="text-justify">
             The forum will allow authors to present their excellent research results and new challenges facing in the
             field of intelligent systems and networks in computer science and information technology. The conference
             will be covering topics from Intelligent System, Networks Application, and many more related to the

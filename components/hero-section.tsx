@@ -71,7 +71,10 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">
-            East Asia University of Technology (EAUT), 21-22 March, 2026
+            East Asia University of Technology (EAUT)
+            </p>
+            <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">
+            21-22 March, 2026
             </p>
           </motion.div>
         </div>
