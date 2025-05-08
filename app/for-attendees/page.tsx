@@ -98,7 +98,7 @@ const [activeTab, setActiveTab] = useState("registration");
 
 
         <TabsContent value="registration" className="mt-6">
-          {/*<Card>
+          <Card>
             <CardHeader>
               <CardTitle>Registration Information</CardTitle>
             </CardHeader>
@@ -186,7 +186,7 @@ const [activeTab, setActiveTab] = useState("registration");
 
               <p className="mt-4"><strong>Contact:</strong> +84 906165579</p>
             </CardContent>
-          </Card>*/}
+          </Card>
         </TabsContent>
 
         <TabsContent value="Submission" className="mt-6">
