@@ -37,12 +37,12 @@ export default function ContactSection() {
 
         <div ref={contactsRef} className="opacity-0 mt-8 flex flex-col items-center justify-center space-y-4">
           <div className="flex items-center space-x-2">
-            <Phone className="h-5 w-5" />
-            <span>0084 906165579</span>
+            {/*<Phone className="h-5 w-5" />
+            <span></span>*/}
           </div>
           <div className="flex items-center space-x-2">
             <Mail className="h-5 w-5" />
-            <span>nguyenlinh79.haui@gmail.com</span>
+            <span>icisnconf@gmail.com</span>
           </div>
         </div>
       </div>

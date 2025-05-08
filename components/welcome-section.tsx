@@ -41,29 +41,16 @@ export default function WelcomeSection() {
         
         <div ref={textRef} className="  opacity-0 mt-8 max-w-3xl mx-auto space-y-4 text-muted-foreground">
           <p className="text-justify" >
-            East Asia University of Technology is organizing two days The fifth International Conference on Intelligent
-            Systems & Networks (ICISN 2026) on 22-23 March 2026. The conference will focus on the Intelligent Systems
-            and Networks along with then-current dependency in line with security and the latest technologies.
+          East Asia University of Technology is organizing the two-day Fifth International Conference on Intelligent Systems & Networks (ICISN 2026) on 22-23 March 2026. The conference will focus on Intelligent Systems and Networks, with emphasis on security considerations and the latest technologies.
           </p>
           <p className="text-justify">
-            The growing demand for networks, various generation mobility, security benchmarks, and providing the
-            Intelligent secure System to customers is the demand of time. The network is indeed greater in demand and
-            thus it's the hour of need to make a broad discussion on this domain. In the past couple of years, amazing
-            developments can be seen from 2G to 5G, Security, and wire to wireless developments.
+          The growing demand for networks, multi-generational mobility, security benchmarks, and providing intelligent secure systems to customers is essential in today's technological landscape. Networks are in greater demand than ever, making it crucial to have comprehensive discussions in this domain. In recent years, we have witnessed remarkable developments from 2G to 5G, enhanced security measures, and advancements from wired to wireless technologies.
           </p>
           <p className="text-justify"> 
-            We would like to invite you to contribute your unpublished research work and participate in ICISN 2026. The
-            two days international technical forum will allow you to interact with numbers of National and International
-            delegates. The ICISN 2026 offers a rich program, including keynote speeches, regular presentations,
-            workshops, academic visiting, or tour. We invite your contribution and participation to make it a successful
-            event. It brings together experts from industry, governments, and academia, experienced in engineering,
-            design, and research.
+          We would like to invite you to contribute your unpublished research work and participate in ICISN 2026. This two-day international technical forum will allow you to interact with numerous national and international delegates. ICISN 2026 offers a rich program, including keynote speeches, regular presentations, workshops, academic visits, and tours.
           </p>
           <p className="text-justify">
-            The forum will allow authors to present their excellent research results and new challenges facing in the
-            field of intelligent systems and networks in computer science and information technology. The conference
-            will be covering topics from Intelligent System, Networks Application, and many more related to the
-            conference theme.
+          We invite your contribution and participation to make this a successful event. The conference brings together experts from industry, governments, and academia who are experienced in engineering, design, and research. The forum will allow authors to present their excellent research results and address new challenges in the field of intelligent systems and networks in computer science and information technology. The conference will cover topics including Intelligent Systems, Network Applications, and many more areas related to the conference theme.
           </p>
         </div>
       </div>

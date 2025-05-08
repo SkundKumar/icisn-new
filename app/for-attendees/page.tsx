@@ -284,7 +284,7 @@ const [activeTab, setActiveTab] = useState("registration");
 
       <h3 className="text-xl font-semibold mt-4">Contact for Submissions</h3>
       <p>
-        📧 <strong>Email:</strong> <a href="mailto:submissions@icisn2026.com" className="text-blue-500 underline">submissions@icisn2026.com</a>
+        📧 <strong>Email:</strong> <a href="mailto:icisnconf@gmail.com " className="text-blue-500 underline">icisnconf@gmail.com </a>
         <br />
         📞 <strong>Phone:</strong> +84 906165579
       </p>
@@ -373,8 +373,8 @@ const [activeTab, setActiveTab] = useState("registration");
         All authors and attendees should check their emails regularly for updates regarding their submissions and registration status.
       </p>
 
-      <p className="mt-4"><strong>Contact:</strong> For any inquiries, please reach out via email or phone.</p>
-      <p className=""><strong>Phone:</strong> <br /> <strong>Email:</strong></p>
+      <p className="mt-4"><strong>Contact:</strong> For any inquiries, please reach out via email.</p>
+      <p className=""><strong>Email:</strong> icisnconf@gmail.com </p>
       
     </CardContent>
   </Card>
@@ -479,7 +479,7 @@ const [activeTab, setActiveTab] = useState("registration");
 </TabsContent>
 
 
-<TabsContent value="program" className="mt-6">
+{/*<TabsContent value="program" className="mt-6">
   <Card>
     <CardHeader>
       <CardTitle>Conference Program</CardTitle>
@@ -487,7 +487,7 @@ const [activeTab, setActiveTab] = useState("registration");
     <CardContent className="space-y-6">
       <p>The detailed program for ICISN 2026 is outlined below.</p>
 
-      {/* Day 1 - March 22, 2026 */}
+      
       <div className="border-b pb-4">
         <h3 className="text-2xl font-bold mt-6">Day 1 (March 22, 2026)</h3>
         <p className="text-lg"><strong>Time:</strong> 07:30 - 20:00</p>
@@ -535,7 +535,7 @@ const [activeTab, setActiveTab] = useState("registration");
         <li className="text-gray-500"><strong>18:30 - 20:00:</strong> 🎉 Gala Dinner</li>
       </ul>
 
-      {/* Day 2 - March 23, 2026 */}
+      
       <div className="border-b pb-4">
         <h3 className="text-2xl font-bold mt-6">Day 2 (March 23, 2026)</h3>
         <p className="text-lg"><strong>Time:</strong> 08:30 - 12:00</p>
@@ -552,7 +552,7 @@ const [activeTab, setActiveTab] = useState("registration");
         <li><strong>10:20 - 12:00:</strong> Parallel Sessions (E1, E2, E3, E4) - Oral Presentations</li>
       </ul>
 
-      {/* Parallel Session Details */}
+    
       <div className="border-b pb-4">
         <h3 className="text-2xl font-bold mt-6">Parallel Session Topics</h3>
       </div>
@@ -573,7 +573,7 @@ const [activeTab, setActiveTab] = useState("registration");
       </ul>
     </CardContent>
   </Card>
-</TabsContent>
+</TabsContent>*/}
 
 
 

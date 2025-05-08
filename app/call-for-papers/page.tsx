@@ -12,8 +12,8 @@ export default function CallForPapersPage() {
       <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Call for Papers</h1>
 
       <div className="max-w-3xl mx-auto">
-        <p className="text-lg mb-8">
-          In this conference, we solicit high-quality unpublished contributions. The aim of this conference is to share new findings, exchange ideas, and discuss research challenges. The conference program will run for two days with regular tracks, tutorials, and special sessions. For the tracks and special sessions, we invite you to contribute your original work on topics in the following, but not limited to, areas:
+        <p className="text-lg mb-8 text-justify">
+        ICISN 2026 welcomes high-quality unpublished contributions from researchers and practitioners. The aim of the conference is to share new findings, exchange ideas, and discuss research challenges in intelligent systems and networks. The program will run for two days featuring regular tracks, tutorials, and special sessions. We invite you to contribute your original work related to the following areas (though submissions are not limited to these topics):
         </p>
 
         <h2 className="text-2xl font-bold mb-4">Topics of Interest</h2>

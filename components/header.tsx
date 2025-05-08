@@ -78,7 +78,7 @@ export default function Header() {
 
           {/* Rainbow Button for Submit Papers */}
           <RainbowButton className=" text-white ">
-            Submit Papers
+            <a href="https://cmt3.research.microsoft.com/ICISN2026 ">Submit Papers</a>
           </RainbowButton>
 
           {/* Mobile Menu Button */}

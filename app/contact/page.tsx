@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us - ICISN 2025",
@@ -28,45 +25,37 @@ export default function ContactPage() {
             <CardTitle>Contact Information</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            {/*<div className="flex items-start space-x-4">
-              <Phone className="h-5 w-5 mt-0.5 text-muted-foreground" />
-              <div>
-                <h3 className="font-semibold">Phone</h3>
-                <p>0084 906165579</p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-4">
-             <Mail className="h-5 w-5 mt-0.5 text-muted-foreground" />
-              <div>
-                <h3 className="font-semibold">Email</h3>
-                <p>nguyenlinh79.haui@gmail.com</p>
-              </div>
-            </div>*/}
-
             <div className="flex items-start space-x-4">
               <MapPin className="h-5 w-5 mt-0.5 text-muted-foreground" />
               <div>
                 <h3 className="font-semibold">Address</h3>
                 <p>
-                East Asia University of Technology
-Practical training facility
-Establishment Decision No.: 1777/QD-TTg
-Trinh Van Bo Street, Nam Tu Liem, Hanoi
+                  East Asia University of Technology<br />
+                  Practical training facility<br />
+                  Establishment Decision No.: 1777/QD-TTg<br />
+                  Trinh Van Bo Street, Nam Tu Liem, Hanoi
                 </p>
               </div>
             </div>
-
-           
           </CardContent>
         </Card>
-
-        {/* Contact Form Card */}
+        
+        {/* Contact Form Embed Card */}
         <Card>
-          
-            <CardTitle className="flex justify-center items-center w-full  h-full p-5"> <a href="">Send Us a Message</a></CardTitle>
-          
-         
+          <CardHeader>
+            <CardTitle>Send Us a Message</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="relative w-full" style={{ paddingTop: "150%" }}>
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdL7jBQvucDNucFbi8ujzVUGS8xdmU0lEgtXv4nIflYuzWlfA/viewform?embedded=true"
+                className="absolute top-0 left-0 w-full h-full rounded-md border-0"
+                allowFullScreen
+              >
+                Loading…
+              </iframe>
+            </div>
+          </CardContent>
         </Card>
       </div>
     </div>
