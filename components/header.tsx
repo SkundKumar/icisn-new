@@ -43,6 +43,7 @@ export default function Header() {
         
        
         <div className="flex h-20 items-center justify-around">
+        <img className="h-14 w-16 " src="/uni.png" alt="" />
           <img className="h-14 w-14 object-cover rounded-full" src="/logo.png" alt="" />
           <Link href="/" className="flex items-center space-x-2 " onClick={() => setIsOpen(false)}>
             <span
