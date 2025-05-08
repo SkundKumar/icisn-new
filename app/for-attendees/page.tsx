@@ -159,7 +159,7 @@ const [activeTab, setActiveTab] = useState("registration");
               <h3 className="text-xl font-semibold mt-4">Payment Information</h3>
               <p>Payments can be made via bank transfer or PayPal.</p>
 
-              <h4 className="text-lg font-semibold mt-2">Bank Transfer</h4>
+              {/*<h4 className="text-lg font-semibold mt-2">Bank Transfer</h4>
               <p>
                 <strong>Customer Name:</strong> Hanoi University of Industry<br />
                 <strong>Account Number:</strong> 3100201013188<br />
@@ -168,15 +168,15 @@ const [activeTab, setActiveTab] = useState("registration");
                 <strong>Transfer Content:</strong> ICISN 2026 ID paper...
               </p>
 
-              <h4 className="text-lg font-semibold mt-2">PayPal</h4>
+              <h4 className="text-lg font-semibold mt-2">PayPal</h4>*/}
               <p>
-                <a href="https://www.paypal.me/dieulinh79" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Pay via PayPal</a><br />
-                <strong>Transfer Content:</strong> ICISN 2026 ID paper...
+                {/*<a href="https://www.paypal.me/dieulinh79" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Pay via PayPal</a><br />
+                <strong>Transfer Content:</strong> ICISN 2026 ID paper...*/}
               </p>
 
               <h3 className="text-xl font-semibold mt-4">Post-Payment Submission</h3>
               <p>
-                After completing the payment, please send the following documents to <strong>Nguyenlinh79.haui@gmail.com</strong>:
+                After completing the payment, please send the following documents to <strong>nguyenlinh79.haui@gmail.com</strong>:
               </p>
               <ul className="list-disc pl-5 space-y-1">
                 <li>Justification of bank transfer for registration</li>
