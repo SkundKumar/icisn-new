@@ -336,11 +336,11 @@ const [activeTab, setActiveTab] = useState("registration");
           <tbody>
             <tr className="border-t">
               <td className="p-3">Paper Submission Deadline</td>
-              <td className="p-3">22 November 2025, 14 January 2026</td>
+              <td className="p-3">22 November 2025</td>
             </tr>
             <tr className="border-t">
               <td className="p-3">Papers Decision</td>
-              <td className="p-3">18 January 2026, 14 February 2026</td>
+              <td className="p-3">18 January 2026</td>
             </tr>
           </tbody>
         </table>
