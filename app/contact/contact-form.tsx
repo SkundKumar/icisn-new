@@ -120,16 +120,23 @@ export default function ContactForm() {
           )}
         />
 
-        <Button type="submit" className="w-full" disabled={isSubmitting}>
-          {isSubmitting ? (
-            <>
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Sending...
-            </>
-          ) : (
-            "Send Message"
-          )}
-        </Button>
+       <Button
+  type="submit"
+  className={`w-full rounded-xl bg-slate-900 text-white px-4 py-2 font-medium
+              hover:text-black hover:border  transition-colors duration-200
+              focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2
+              disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center`}
+  disabled={isSubmitting}
+>
+  {isSubmitting ? (
+    <>
+      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+      Sending...
+    </>
+  ) : (
+    "Send Message"
+  )}
+</Button>
       </form>
     </Form>
   )
