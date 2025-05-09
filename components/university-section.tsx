@@ -51,8 +51,8 @@ export default function UniversitySection() {
           East Asia University of Technology (EAUT)
         </h2>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 items-center">
-          <div ref={imageRef} className="opacity-0 relative h-[400px] overflow-hidden rounded-lg">
+        <div className="mt-12 grid gap-8 md:grid-cols-1 items-center">
+          {/*<div ref={imageRef} className="opacity-0 relative h-[400px] overflow-hidden rounded-lg">
           <motion.div
   ref={imageRef}
   style={{ y: yTransform }} // Parallax Effect
@@ -65,9 +65,9 @@ export default function UniversitySection() {
   className="absolute inset-0 object-cover"
 />
 </motion.div>
-          </div>
+          </div>*/}
 
-          <div ref={textRef} className=" text-justify opacity-0 space-y-4 text-muted-foreground">
+          <div ref={textRef} className=" text-justify md:ml-52 md:mr-52 p-5 opacity-0 space-y-4 text-muted-foreground">
             <p>
             The East Asia University of Technology (EAUT) is a multidisciplinary educational institution in Vietnam focusing on areas such as business management, information technology, electrical-electronics engineering technology, and construction engineering. EAUT officially began enrolling and training students for College and Undergraduate programs in the 2015-2016 academic year. 
             </p>
