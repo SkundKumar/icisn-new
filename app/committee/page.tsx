@@ -1,7 +1,95 @@
 import type { Metadata } from "next"
 import { Users } from "lucide-react"
-
 const committees = {
+  generalChair: [
+    {
+      name: "Dinh Van Thanh",
+      title: "Ph.D",
+      role: "Rector of East Asia University of Technology (EAUT)"
+    }
+  ],
+  generalCoChair: [
+    {
+      name: "Thai The Hung",
+      title: "Assoc.Prof.Ph.D",
+      role: "Vice - Rector of East Asia University of Technology"
+    }
+  ],
+  steeringCommittee: [
+    {
+      name: "Tran Duc Tan",
+      title: "Ph.D",
+      role: "Phenikaa University, Vietnam"
+    },
+    {
+      name: "Le Anh Ngoc",
+      title: "Ph.D",
+      role: "Director of Innovation Space, Swinburne Vietnam Alliance Program"
+    },
+    {
+      name: "Nguyen Thi Dieu Linh",
+      title: "Ph.D",
+      role: "Hanoi University of Industry, Vietnam"
+    },
+    {
+      name: "Vijender Kr Solanki",
+      title: "Ph.D",
+      role: "Stanley College Of Engineering & Technology For Women, Hyderabad, India"
+    }
+  ],
+  organisingCommittee: [
+    {
+      name: "Nguyen Thi Thanh Nhan",
+      title: "Ph.D",
+      role: "Vice-Head of Department of Scientific Management, East Asia University of Technology"
+    },
+    {
+      name: "Nguyen Quang Hung",
+      title: "Assoc.Prof.Ph.D",
+      role: "Head of Department of Electrical and Electronic Engineering, East Asia University of Technology"
+    },
+    {
+      name: "Tran Huu Phuc",
+      title: "PhD",
+      role: "Vice - Head of Department of Electrical and Electronic Engineering, East Asia University of Technology"
+    },
+    {
+      name: "Nguyen Thi Kim Quyen",
+      title: "M.S",
+      role: "Head of Department of Administration, East Asia University of Technology"
+    }
+  ],
+  technicalProgramCommittee: [],
+  programChair: [
+    {
+      name: "Thai The Hung",
+      title: "Assoc.Prof.Ph.D",
+      role: "Vice - Rector of East Asia University of Technology"
+    }
+  ],
+  financeChairs: [
+    {
+      name: "Nguyen Thi Dieu Linh",
+      title: "Ph.D",
+      role: "Hanoi University of Industry, Hanoi, Vietnam"
+    },
+    {
+      name: "Nguyen Thanh Huyen",
+      title: "M.S",
+      role: "Head of Department of Finance and Accounting, East Asia University of Technology"
+    }
+  ],
+  webAndSocialMediaTeam: [
+    {
+      name: "Pham Ngoc Tuyen",
+      title: "M.S",
+      role: "Head of Department of Admission and Marketing, East Asia University of Technology"
+    }
+  ]
+};
+
+
+{/*const committees = {
   generalChair: [
     {
       name: "Kieu Xuan Thuc",
@@ -130,7 +218,7 @@ const committees = {
     { name: "Pham Van Cu", title: "Ph.D", role: "Japan Advanced Institute of Science and Technology, Japan" }
   ]
 }
-
+*/}
 export default function CommitteePage() {
   return (
     <div className="container mx-auto px-4 mt-20 py-16 md:px-6">
@@ -194,8 +282,45 @@ export default function CommitteePage() {
           </div>
         </section>
 
-        {/* Technical Program Committee */}
         <section className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary">
+Program Chairs
+</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {committees.programChair.map((member, i) => (
+              <div key={i} className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold">{member.name}, {member.title}</h3>
+                <p className="text-muted-foreground mt-2">{member.role}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary">Finance Chairs</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {committees.financeChairs.map((member, i) => (
+              <div key={i} className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold">{member.name}, {member.title}</h3>
+                <p className="text-muted-foreground mt-2">{member.role}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+             <section className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary">Web and Social Media Team</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {committees.webAndSocialMediaTeam.map((member, i) => (
+              <div key={i} className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold">{member.name}, {member.title}</h3>
+                <p className="text-muted-foreground mt-2">{member.role}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+        {/* Technical Program Committee */}
+        {/*<section className="space-y-6">
           <h2 className="text-2xl font-bold text-primary">Technical Program Committee (TPC)</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {committees.technicalProgramCommittee.map((member, i) => (
@@ -205,7 +330,7 @@ export default function CommitteePage() {
               </div>
             ))}
           </div>
-        </section>
+        </section>*/}
       </div>
     </div>
   )

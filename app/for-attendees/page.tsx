@@ -98,96 +98,115 @@ const [activeTab, setActiveTab] = useState("registration");
 
 
         <TabsContent value="registration" className="mt-6">
-          <Card>
-            <CardHeader>
-              <CardTitle>Registration Information</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p>
-                The conference registration fee includes admission to all conference sessions, coffee break refreshments, lunches, the Banquet, and a copy of the Conference Abstract.
-              </p>
+        <Card>
+          <CardHeader>
+            <CardTitle>Registration Information</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p>
+              The conference registration fee includes admission to all conference sessions, coffee break refreshments,
+              lunches, the Banquet, and a copy of the Conference Abstract.
+            </p>
 
-              <h3 className="text-xl font-semibold mt-4">Registration Fees</h3>
-              <div className="border rounded-lg overflow-hidden">
-                <table className="w-full">
-                  <thead className="bg-muted">
-                    <tr>
-                      <th className="p-3 text-left">Category</th>
-                      <th className="p-3 text-left">Early Registration (Before Feb 21, 2026)</th>
-                      <th className="p-3 text-left">Late Registration (Feb 22 - Mar 1, 2026)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-t">
-                      <td className="p-3">Full-Time Research Student</td>
-                      <td className="p-3">$170 (4,350,000 VND)</td>
-                      <td className="p-3">$200 (5,100,000 VND)</td>
-                    </tr>
-                    <tr className="border-t">
-                      <td className="p-3">Faculty</td>
-                      <td className="p-3">$200 (5,100,000 VND)</td>
-                      <td className="p-3">$250 (6,370,000 VND)</td>
-                    </tr>
-                    <tr className="border-t">
-                      <td className="p-3">Industry</td>
-                      <td className="p-3">$250 (6,370,000 VND)</td>
-                      <td className="p-3">$300 (7,650,000 VND)</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <h3 className="text-xl font-semibold mt-4">Registration Fees</h3>
+            <div className="border rounded-lg overflow-hidden">
+              <table className="w-full">
+                <thead className="bg-muted">
+                  <tr>
+                    <th className="p-3 text-left">Registration Type</th>
+                    <th className="p-3 text-left">Early Registration (Before 15/02/2026)</th>
+                    <th className="p-3 text-left">Late Registration (16/02/2026 to 25/02/2026)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-t">
+                    <td className="p-3">Full Time Research Student Category</td>
+                    <td className="p-3">$200 (5,100,000 VND)</td>
+                    <td className="p-3">$250 (6,375,000 VND)</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="p-3">Faculty Category</td>
+                    <td className="p-3">$250 (6,375,000 VND)</td>
+                    <td className="p-3">$300 (7,650,000 VND)</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="p-3">Industry Category</td>
+                    <td className="p-3">$300 (7,650,000 VND)</td>
+                    <td className="p-3">$350 (8,925,000 VND)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-              <p className="mt-4">
-                Each registration covers only one author who attends the conference. Additional pages beyond the 6-page limit will be charged at $15 (385,000 VND) per page, up to a maximum of 10 pages.
-              </p>
+            <h3 className="text-xl font-semibold mt-4">Important Notes</h3>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>
+                <a href="https://cmt3.research.microsoft.com/">The Microsoft CMT</a> service was used for managing the peer-reviewing process for this conference. This
+                service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud
+                services as well as for software development and support.
+              </li>
+              <li>
+                The conference registration fee includes admission to all conference sessions, coffee break
+                refreshments, lunches, the Banquet, and a copy of the Conference Abstract.
+              </li>
+              <li>
+                For attendance: one-day registration ($25 = 640,000 VND/day) is registered and paid at the conference.
+              </li>
+              <li>
+                The registration fees apply for a maximum of 06 pages only, additional pages shall be charged extra ($15
+                = 385,000 VND) per page up to a maximum of 10 pages only.
+              </li>
+              <li>15% similarity is acceptable.</li>
+              <li>If the paper is not presented at the conference, it will not be included in the proceedings.</li>
+            </ul>
 
-              <h3 className="text-xl font-semibold mt-4">Refund Policy</h3>
-              <p>
-                If an author wishes to cancel their registration, a 50% refund will be provided if the request is made before February 20, 2026. After this date, no refunds will be issued.
-              </p>
+            <h3 className="text-xl font-semibold mt-4">Registration Benefits</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Admission to the Scientific Sessions</li>
+              <li>Coffee Breaks</li>
+              <li>Lunches</li>
+              <li>A Certificate of Attendance</li>
+            </ul>
 
-              <h3 className="text-xl font-semibold mt-4">One-Day Attendance</h3>
-              <p>
-                Attendees who are not presenting papers can register for a one-day pass at $25 per day, payable at the conference venue.
-              </p>
+            <h3 className="text-xl font-semibold mt-4">Refund Policy</h3>
+            <p>
+              In case the author wants to cancel the registration after payment, the conference will refund only 50% of
+              the fees. The last date for registration cancellation request submission is October 5th, 2025. After the
+              conference, no fees will be refunded for any cases.
+            </p>
 
-              <h3 className="text-xl font-semibold mt-4">Presentation Requirement</h3>
-              <p>
-                Papers that are not presented at the conference will not be included in the conference proceedings.
-              </p>
+            <h3 className="text-xl font-semibold mt-4">Payment Information</h3>
+            <h4 className="text-lg font-semibold mt-2">PayPal Transfer Instructions</h4>
+            <p>
+              <a
+                href="https://www.paypal.me/dieulinh79"
+                className="text-primary underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pay via PayPal
+              </a>
+              <br />
+              <strong>Transfer content:</strong> ICISN 2026 ID paper...
+            </p>
 
-              <h3 className="text-xl font-semibold mt-4">Payment Information</h3>
-              <p>Payments can be made via bank transfer or PayPal.</p>
+            <h3 className="text-xl font-semibold mt-4">Post-Payment Submission</h3>
+            <p>
+              After completing the payment, please send the following documents to{" "}
+              <strong>nguyenlinh79.haui@gmail.com</strong>:
+            </p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Justification of bank transfer for registration</li>
+              <li>Final paper submission (Word or LaTeX source)</li>
+              <li>Publishing agreement</li>
+            </ul>
 
-              {/*<h4 className="text-lg font-semibold mt-2">Bank Transfer</h4>
-              <p>
-                <strong>Customer Name:</strong> Hanoi University of Industry<br />
-                <strong>Account Number:</strong> 3100201013188<br />
-                <strong>Bank Name:</strong> Vietnam Bank for Agriculture and Rural Development - Tu Liem Branch<br />
-                <strong>Swift Code:</strong> VBAAVNVX406<br />
-                <strong>Transfer Content:</strong> ICISN 2026 ID paper...
-              </p>
-
-              <h4 className="text-lg font-semibold mt-2">PayPal</h4>*/}
-              <p>
-                {/*<a href="https://www.paypal.me/dieulinh79" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Pay via PayPal</a><br />
-                <strong>Transfer Content:</strong> ICISN 2026 ID paper...*/}
-              </p>
-
-              <h3 className="text-xl font-semibold mt-4">Post-Payment Submission</h3>
-              <p>
-                After completing the payment, please send the following documents to <strong>nguyenlinh79.haui@gmail.com</strong>:
-              </p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Justification of bank transfer for registration</li>
-                <li>Final paper submission (Word or LaTeX source)</li>
-                <li>Publishing agreement</li>
-              </ul>
-
-              <p className="mt-4"><strong>Contact:</strong> +84 906165579</p>
-            </CardContent>
-          </Card>
-        </TabsContent>
+            <p className="mt-4">
+              <strong>Contact:</strong> +84 906165579
+            </p>
+          </CardContent>
+        </Card>
+      </TabsContent>
 
         <TabsContent value="Submission" className="mt-6">
   <Card>
@@ -336,11 +355,15 @@ const [activeTab, setActiveTab] = useState("registration");
           <tbody>
             <tr className="border-t">
               <td className="p-3">Paper Submission Deadline</td>
-              <td className="p-3">22 November 2025</td>
+              <td className="p-3">30 November 2025</td>
             </tr>
             <tr className="border-t">
               <td className="p-3">Papers Decision</td>
-              <td className="p-3">18 January 2026</td>
+              <td className="p-3">15 January 2026</td>
+            </tr>
+            <tr className="border-t">
+              <td className="p-3">Final Paper Submission</td>
+              <td className="p-3">15 February 2026</td>
             </tr>
           </tbody>
         </table>
@@ -358,7 +381,7 @@ const [activeTab, setActiveTab] = useState("registration");
           <tbody>
             <tr className="border-t">
               <td className="p-3">Early Registration</td>
-              <td className="p-3">21 February 2026</td>
+              <td className="p-3">Before 15 February 2026</td>
             </tr>
             <tr className="border-t">
               <td className="p-3">Late Registration</td>
