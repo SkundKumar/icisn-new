@@ -48,7 +48,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2 " onClick={() => setIsOpen(false)}>
           <span
   className={cn(
-    "hidden md:block text-2xl font-bold tracking-tighter font-playfair",
+    "hidden md:block text-xl font-bold tracking-tighter font-playfair",
     scrolled || pathname !== "/" ? "text-black" : "text-white"
   )}
 >
@@ -56,13 +56,13 @@ export default function Header() {
 </span>
           </Link>
 
-          <nav className="hidden md:flex space-x-6">
+          <nav className="hidden md:flex space-x-4">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 href={item.path}
                 className={cn(
-                  "text-sm font-medium tracking-wider transition-colors",
+                  "text-sm font-medium tracking-wide transition-colors",
                   pathname === item.path
                     ? scrolled || pathname !== "/"
                       ? "text-black border-b-2 border-black pb-1"
