@@ -51,7 +51,7 @@ export default function GallerySection() {
           {/* Large featured image */}
           <div className="opacity-0 gallery-item bento-span-8 relative h-[400px] overflow-hidden rounded-lg">
             <Image
-              src="/IMG-20250509-WA0014.jpg"
+              src="/1.jpg"
               alt="Conference hall"
               fill
               className="object-cover transition-transform duration-500 hover:scale-105"
@@ -79,7 +79,7 @@ export default function GallerySection() {
 
           <div className="opacity-0 gallery-item bento-span-4 relative h-[300px] overflow-hidden rounded-lg">
             <Image
-              src="/IMG-20250509-WA0018.jpg"
+              src="/IMG-20250509-WA0014.jpg"
               alt="Panel discussion"
               fill
               className="object-cover transition-transform duration-500 hover:scale-105"
