@@ -51,7 +51,7 @@ export default function GallerySection() {
           {/* Large featured image */}
           <div className="opacity-0 gallery-item bento-span-8 relative h-[400px] overflow-hidden rounded-lg">
             <Image
-              src="https://icisn.com/wp-content/uploads/cache/2024/04/DTC03932_11zon-scaled/1053132353.jpg"
+              src="/IMG-20250509-WA0014.jpg"
               alt="Conference hall"
               fill
               className="object-cover transition-transform duration-500 hover:scale-105"
@@ -61,7 +61,7 @@ export default function GallerySection() {
           {/* Smaller images */}
           <div className="opacity-0 gallery-item bento-span-4 relative h-[400px] overflow-hidden rounded-lg">
             <Image
-              src="https://icisn.com/wp-content/uploads/cache/2024/04/DTC03791_11zon-scaled/1504208897.jpg"
+              src="/IMG-20250509-WA0015.jpg"
               alt="Keynote speaker"
               fill
               className="object-cover transition-transform duration-500 hover:scale-105"
@@ -70,7 +70,7 @@ export default function GallerySection() {
 
           <div className="opacity-0 gallery-item bento-span-4 relative h-[300px] overflow-hidden rounded-lg">
             <Image
-              src="https://icisn.com/wp-content/uploads/cache/2024/04/DTC03799_11zon-scaled/3304622359.jpg"
+              src="/IMG-20250509-WA0017.jpg"
               alt="Conference attendees"
               fill
               className="object-cover transition-transform duration-500 hover:scale-105"
@@ -79,7 +79,7 @@ export default function GallerySection() {
 
           <div className="opacity-0 gallery-item bento-span-4 relative h-[300px] overflow-hidden rounded-lg">
             <Image
-              src="https://icisn.com/wp-content/uploads/cache/2024/04/DTC03517_11zon-scaled/2324697502.jpg"
+              src="/IMG-20250509-WA0018.jpg"
               alt="Panel discussion"
               fill
               className="object-cover transition-transform duration-500 hover:scale-105"
@@ -88,7 +88,7 @@ export default function GallerySection() {
 
           <div className="opacity-0 gallery-item bento-span-4 relative h-[300px] overflow-hidden rounded-lg">
             <Image
-              src="https://icisn.com/wp-content/uploads/cache/2024/04/DTC03576_11zon-scaled/2357118544.jpg"
+              src="/IMG-20250509-WA0019.jpg"
               alt="Networking event"
               fill
               className="object-cover transition-transform duration-500 hover:scale-105"
