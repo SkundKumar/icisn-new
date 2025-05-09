@@ -21,8 +21,10 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "ICISN 2026 - International Conference on Intelligent Systems and Networks",
   description:
-    "Fifth International Conference on Intelligent Systems and Networks - Hanoi University of Industry, 22-23 March, 2025",
-  generator: "v0.dev",
+    "Fifth International Conference on Intelligent Systems and Networks - Hanoi University of Industry, 21-22 March, 2026",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
