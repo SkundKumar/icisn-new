@@ -41,7 +41,7 @@ export default function WelcomeSection() {
         
         <div ref={textRef} className="  opacity-0 mt-8 max-w-3xl mx-auto space-y-4 text-muted-foreground">
           <p className="text-justify" >
-          East Asia University of Technology is organizing the two-day Fifth International Conference on Intelligent Systems & Networks (ICISN 2026) on 22-23 March 2026. The conference will focus on Intelligent Systems and Networks, with emphasis on security considerations and the latest technologies.
+          East Asia University of Technology is organizing the two-day Sixth International Conference on Intelligent Systems & Networks (ICISN 2026) on 22-23 March 2026. The conference will focus on Intelligent Systems and Networks, with emphasis on security considerations and the latest technologies.
           </p>
           <p className="text-justify">
           The growing demand for networks, multi-generational mobility, security benchmarks, and providing intelligent secure systems to customers is essential in today's technological landscape. Networks are in greater demand than ever, making it crucial to have comprehensive discussions in this domain. In recent years, we have witnessed remarkable developments from 2G to 5G, enhanced security measures, and advancements from wired to wireless technologies.
