@@ -21,7 +21,7 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "ICISN 2026 - International Conference on Intelligent Systems and Networks",
   description:
-    "Fifth International Conference on Intelligent Systems and Networks - Hanoi University of Industry, 21-22 March, 2026",
+    "Sixth International Conference on Intelligent Systems and Networks - East Asia University of Technology (EAUT), 21-22 March, 2026",
   icons: {
     icon: "/logo.png",
   },
