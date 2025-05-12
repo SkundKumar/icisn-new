@@ -53,35 +53,46 @@ export default function UniversitySection() {
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 items-center">
           <div ref={imageRef} className="opacity-0 relative h-[400px] overflow-hidden rounded-lg">
-           <div className="mt-12 grid gap-8 md:grid-rows-2 items-center">
-          
-<motion.div
-  ref={imageRef}
-  style={{ y: yTransform }} // Parallax Effect
-  className=" relative h-[400px] overflow-hidden rounded-lg"
->
-<Image
-  src="/WhatsApp Image 2025-05-10 at 20.50.44_76dffb17.jpg"
-  alt="EAUT"
-  fill
-  className="absolute inset-0 object-cover"
-/>
+           <div className="mt-12 grid gap-8 md:grid-cols-2 items-center">
+  <motion.div
+    ref={imageRef}
+    style={{ y: yTransform }}
+    className="relative h-[400px] overflow-hidden rounded-lg"
+  >
+    <Image
+      src="/WhatsApp Image 2025-05-10 at 20.50.44_76dffb17.jpg"
+      alt="EAUT 1"
+      fill
+      className="absolute inset-0 object-cover"
+    />
+  </motion.div>
 
-</motion.div>
-<motion.div
-  ref={imageRef}
-  style={{ y: yTransform }} // Parallax Effect
-  className=" relative h-[400px] overflow-hidden rounded-lg"
->
-<Image
-  src="/WhatsApp Image 2025-05-10 at 20.51.03_4985f1a3.jpg"
-  alt="EAUT"
-  fill
-  className="absolute inset-0 object-cover"
-/>
+  <motion.div
+    ref={imageRef}
+    style={{ y: yTransform }}
+    className="relative h-[400px] overflow-hidden rounded-lg"
+  >
+    <Image
+      src="/WhatsApp Image 2025-05-10 at 20.51.03_4985f1a3.jpg"
+      alt="EAUT 2"
+      fill
+      className="absolute inset-0 object-cover"
+    />
+  </motion.div>
 
-</motion.div>
-</div> 
+  <motion.div
+    ref={imageRef}
+    style={{ y: yTransform }}
+    className="relative h-[400px] overflow-hidden rounded-lg"
+  >
+    <Image
+      src="/your-new-image.jpg" // Replace with your actual image path
+      alt="EAUT 3"
+      fill
+      className="absolute inset-0 object-cover"
+    />
+  </motion.div>
+</div>
           </div>
 
           <div ref={textRef} className=" text-justify  opacity-0 space-y-4 text-muted-foreground">
