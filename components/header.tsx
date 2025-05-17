@@ -33,30 +33,28 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300",
+        "fixed top-0 w-full z-50 transition-all duration-500",
         scrolled || pathname !== "/" 
-          ? "bg-white/80 shadow-sm" 
-          : "bg-white/10 backdrop-blur-sm backdrop-saturate-100"
+          ? "bg-white/20 backdrop-blur-xl border-b border-white/30 shadow-[0_8px_32px_0_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] before:from-white/10 before:via-transparent before:to-transparent before:opacity-50" 
+          : "bg-white/20 backdrop-blur-3xl border-b border-white/50 rounded-2xl before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] before:from-white/10 before:via-transparent before:to-transparent before:opacity-50"
       )}
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 relative">
         <div className="flex h-20 items-center justify-between">
           {/* Section 1: Logos */}
           <div className="flex items-center gap-5 custom:gap-2">
             <div className="flex items-center gap-1 custom:gap-2">
-              <img className="h-[42px] w-[42px] custom:h-[50px] custom:w-[50px] rounded-full object-cover" src="/uni.jpg" alt="University Logo" />
-              <img className="h-10 w-10 custom:h-12 custom:w-12 object-cover rounded-full" src="/logo.png" alt="ICISN Logo" />
-              <img className="h-10 w-24 custom:h-12 custom:w-32" src="https://www.springer.com/public/images/springer-logo.svg" alt="Springer Logo" />  
+              <img className="h-[42px] w-[42px] custom:h-[50px] custom:w-[50px] rounded-full object-cover transition-all duration-300 hover:scale-105 ring-2 ring-white/30" src="/uni.jpg" alt="University Logo" />
+              <img className="h-10 w-10 custom:h-12 custom:w-12 object-cover rounded-full transition-all duration-300 hover:scale-105 ring-2 ring-white/30" src="/logo.png" alt="ICISN Logo" />
+              <img className="h-10 w-24 custom:h-12 custom:w-32 transition-all duration-300 hover:scale-105" src="https://www.springer.com/public/images/springer-logo.svg" alt="Springer Logo" />
               <Link href="/" className="flex items-center">
-              <img
-                src="/icisn.png"
-                alt="ICISN 2026 Logo"
-                className="hidden xs:block h-18 w-24"
-              />
-            </Link>
+                <img
+                  src="/icisn.png"
+                  alt="ICISN 2026 Logo"
+                  className="hidden xs:block h-18 w-24"
+                />
+              </Link>
             </div>
-            
-            
           </div>
 
           {/* Section 2: Navigation Links - Hidden on mobile */}
@@ -66,31 +64,31 @@ export default function Header() {
                 key={item.path}
                 href={item.path}
                 className={cn(
-                  "text-sm font-medium tracking-wide transition-colors",
+                  "text-sm font-medium tracking-wide transition-colors relative group",
                   pathname === item.path
                     ? scrolled || pathname !== "/"
-                      ? "text-black border-b-2 border-black pb-1"
-                      : "text-white border-b-2 border-white pb-1"
+                      ? "text-black border-b-2 border-black pb-1 after:absolute after:inset-0 after:bg-white/20 after:rounded-lg after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
+                      : "text-white border-b-2 border-white pb-1 after:absolute after:inset-0 after:bg-white/20 after:rounded-lg after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
                     : scrolled || pathname !== "/"
-                    ? "text-gray-900"
-                    : "text-white"
+                    ? "text-gray-900 after:absolute after:inset-0 after:bg-white/20 after:rounded-lg after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
+                    : "text-white after:absolute after:inset-0 after:bg-white/20 after:rounded-lg after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
                 )}
               >
-                {item.name}
+                <span className="relative z-10">{item.name}</span>
               </Link>
             ))}
           </nav>
 
           {/* Section 3: Submit Button and Mobile Menu */}
           <div className="flex items-center gap-0">
-            <RainbowButton className="text-white">
-              <a href="https://cmt3.research.microsoft.com/ICISN2026">Submit Papers</a>
+             <RainbowButton className="text-white transition-all duration-300 ml-5">
+              <a href="https://cmt3.research.microsoft.com/ICISN2026" className="font-medium">Submit Papers</a>
             </RainbowButton>
 
             {/* Mobile Menu Button */}
             <div className="custom:hidden relative">
               <button 
-                className="p-1"
+                className="p-1 hover:bg-white/30 rounded-lg transition-colors duration-300"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <div className="relative w-5 h-5">
@@ -111,23 +109,23 @@ export default function Header() {
 
               {/* Mobile Menu Dropdown */}
               <div className={cn(
-                "fixed right-4 top-[5.5rem] bg-white/95 backdrop-blur-sm shadow-lg rounded-2xl transform transition-all duration-300 w-[220px] border border-gray-100",
+                "fixed right-4 top-[5.5rem] bg-white/60 backdrop-blur-xl rounded-2xl transform transition-all duration-500 w-[220px] border border-white/30 shadow-[0_8px_32px_0_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] before:from-white/10 before:via-transparent before:to-transparent before:opacity-50",
                 isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
               )}>
-                <div className="flex flex-col py-2">
+                <div className="flex flex-col py-2 relative">
                   {navItems.map((item) => (
                     <Link
                       key={item.path}
                       href={item.path}
                       className={cn(
-                        "px-5 py-2.5 text-sm font-medium tracking-wide transition-colors",
+                        "px-5 py-2.5 text-sm font-medium tracking-wide transition-all duration-300 relative group",
                         pathname === item.path
-                          ? "text-primary bg-gradient-to-r from-primary/5 to-primary/10"
-                          : "text-gray-700 hover:text-primary hover:bg-gradient-to-r hover:from-primary/5 hover:to-primary/10"
+                          ? "text-primary after:absolute after:inset-0 after:bg-white/20 after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
+                          : "text-gray-700 hover:text-primary after:absolute after:inset-0 after:bg-white/20 after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
                       )}
                       onClick={() => setIsOpen(false)}
                     >
-                      {item.name}
+                      <span className="relative z-10">{item.name}</span>
                     </Link>
                   ))}
                 </div>

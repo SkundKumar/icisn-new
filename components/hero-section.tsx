@@ -35,10 +35,10 @@ export default function HeroSection() {
       </div>
 
       {/* Text Section - Kept Left-Aligned but Increased Vertical Scaling */}
-      <div className="relative z-10 w-full px-4 md:px-8 lg:px-12 flex mt-52 md:ml-20">
+      <div className="relative z-10 w-full px-4 md:px-8 lg:px-12 flex mt-96 md:ml-20">
         <div
           ref={containerRef}
-          className="max-w-screen-md"
+          className="max-w-screen-lg"
         >
           <motion.h1
             className="text-white font-semibold ml-4 leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
@@ -46,24 +46,25 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Sixth International Conference on
+            Sixth International
+          </motion.h1>
+          <motion.h1
+            className="text-white font-semibold ml-4 leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            Conference on
           </motion.h1>
           <motion.h2
-            className="mt-2 text-white font-semibold ml-4 leading-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl"
+            className="mt-2 text-white font-semibold ml-4 leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl whitespace-nowrap"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             Intelligent Systems and Networks
           </motion.h2>
-          <motion.h2
-            className="mt-2 text-white ml-4 leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-5xl"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            EAUT, Vietnam
-          </motion.h2>
+         
           <motion.div
             className="mt-6 inline-block rounded-full border border-white/30 bg-black/40 px-6 py-3 md:px-6 md:py-3 backdrop-blur-md"
             initial={{ opacity: 0, x: -50 }}
