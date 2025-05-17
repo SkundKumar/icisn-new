@@ -35,28 +35,35 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        scrolled || pathname !== "/" ? "bg-white/80 shadow-sm" : "bg-transparent"
+        scrolled || pathname !== "/" 
+          ? "bg-white/80 shadow-sm" 
+          : "bg-white/10 backdrop-blur-sm backdrop-saturate-100 "
       )}
     >
       
       <div className="container mx-auto px-4 md:px-6">
-        
-       
-        <div className="flex h-20 items-center justify-around">
-        <img className="h-14 w-16  rounded-full" src="/uni.png" alt="" />
-          <img className="h-14 w-14 object-cover rounded-full" src="/logo.png" alt="" />
-          <Link href="/" className="flex items-center space-x-2 " onClick={() => setIsOpen(false)}>
-          <span
-  className={cn(
-    "hidden md:block text-xl font-bold tracking-tighter font-playfair",
-    scrolled || pathname !== "/" ? "text-black" : "text-white"
-  )}
->
-  ICISN
-</span>
-          </Link>
+        <div className="flex h-20 items-center justify-between">
+          {/* Section 1: Logos */}
+          <div className="flex items-center space-x-2 md:space-x-4">
+            <div className="flex items-center space-x-1 md:space-x-2">
+              <img className="h-10 w-12 md:h-12 md:w-14 rounded-full" src="/uni.png" alt="University Logo" />
+              <img className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-full" src="/logo.png" alt="ICISN Logo" />
+            </div>
+            <img className="h-8 w-20 md:h-12 md:w-32" src="https://www.springer.com/public/images/springer-logo.svg" alt="Springer Logo" />
+            <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
+              <span
+                className={cn(
+                  "hidden md:block text-xl font-bold tracking-tighter font-playfair",
+                  scrolled || pathname !== "/" ? "text-black" : "text-white"
+                )}
+              >
+                ICISN
+              </span>
+            </Link>
+          </div>
 
-          <nav className="hidden md:flex space-x-4">
+          {/* Section 2: Navigation Links - Hidden on mobile */}
+          <nav className="hidden custom:flex space-x-4">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -77,26 +84,28 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Rainbow Button for Submit Papers */}
-          <RainbowButton className=" text-white ">
-            <a href="https://cmt3.research.microsoft.com/ICISN2026 ">Submit Papers</a>
-          </RainbowButton>
+          {/* Section 3: Submit Button and Mobile Menu */}
+          <div className="flex items-center space-x-4">
+            <RainbowButton className="text-white">
+              <a href="https://cmt3.research.microsoft.com/ICISN2026">Submit Papers</a>
+            </RainbowButton>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="h-6 w-6 text-black" /> : <Menu className="h-6 w-6 text-black" />}
-            <span className="sr-only">Toggle menu</span>
-          </button>
+            {/* Mobile Menu Button */}
+            <button
+              className="custom:hidden"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X className="h-6 w-6 text-black" /> : <Menu className="h-6 w-6 text-black" />}
+              <span className="sr-only">Toggle menu</span>
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile menu */}
       <div
         className={cn(
-          "md:hidden fixed inset-0 top-20 bg-background z-40 transform transition-transform duration-300 ease-in-out",
+          "custom:hidden fixed inset-0 top-20 bg-background z-40 transform transition-transform duration-300 ease-in-out",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >

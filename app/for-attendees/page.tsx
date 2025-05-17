@@ -311,7 +311,7 @@ const [activeTab, setActiveTab] = useState("registration");
   </Card>
 </TabsContent>
 <TabsContent value="publication" className="mt-6">
-  {/*<Card>
+  <Card>
     <CardHeader>
       <CardTitle>Publications</CardTitle>
     </CardHeader>
@@ -328,7 +328,7 @@ const [activeTab, setActiveTab] = useState("registration");
         All books published in the series are submitted for consideration in the <strong>Web of Science</strong>.
       </p>
     </CardContent>
-  </Card>*/}
+  </Card>
 </TabsContent>
 
 
