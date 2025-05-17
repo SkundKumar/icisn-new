@@ -2,10 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
-import { RainbowButton } from "./RainbowButton" // Import the RainbowButton
+import { RainbowButton } from "./RainbowButton";
 
 const navItems = [
   { name: "HOME", path: "/" },
@@ -18,8 +17,8 @@ const navItems = [
 ];
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -37,29 +36,27 @@ export default function Header() {
         "fixed top-0 w-full z-50 transition-all duration-300",
         scrolled || pathname !== "/" 
           ? "bg-white/80 shadow-sm" 
-          : "bg-white/10 backdrop-blur-sm backdrop-saturate-100 "
+          : "bg-white/10 backdrop-blur-sm backdrop-saturate-100"
       )}
     >
-      
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-20 items-center justify-between">
           {/* Section 1: Logos */}
-          <div className="flex items-center space-x-2 md:space-x-4">
-            <div className="flex items-center space-x-1 md:space-x-2">
-              <img className="h-[42px] w-[42px] md:h-[50px] md:w-[50px] rounded-full object-cover" src="/uni.jpg" alt="University Logo" />
-              <img className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-full" src="/logo.png" alt="ICISN Logo" />
-            </div>
-            <img className="h-8 w-20 md:h-12 md:w-32" src="https://www.springer.com/public/images/springer-logo.svg" alt="Springer Logo" />
-            <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
-              <span
-                className={cn(
-                  "hidden md:block text-xl font-bold tracking-tighter font-playfair",
-                  scrolled || pathname !== "/" ? "text-black" : "text-white"
-                )}
-              >
-                ICISN
-              </span>
+          <div className="flex items-center gap-5 custom:gap-2">
+            <div className="flex items-center gap-1 custom:gap-2">
+              <img className="h-[42px] w-[42px] custom:h-[50px] custom:w-[50px] rounded-full object-cover" src="/uni.jpg" alt="University Logo" />
+              <img className="h-10 w-10 custom:h-12 custom:w-12 object-cover rounded-full" src="/logo.png" alt="ICISN Logo" />
+              <img className="h-10 w-24 custom:h-12 custom:w-32" src="https://www.springer.com/public/images/springer-logo.svg" alt="Springer Logo" />  
+              <Link href="/" className="flex items-center">
+              <img
+                src="/icisn.png"
+                alt="ICISN 2026 Logo"
+                className="hidden xs:block h-18 w-24"
+              />
             </Link>
+            </div>
+            
+            
           </div>
 
           {/* Section 2: Navigation Links - Hidden on mobile */}
@@ -85,42 +82,59 @@ export default function Header() {
           </nav>
 
           {/* Section 3: Submit Button and Mobile Menu */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center gap-0">
             <RainbowButton className="text-white">
               <a href="https://cmt3.research.microsoft.com/ICISN2026">Submit Papers</a>
             </RainbowButton>
 
             {/* Mobile Menu Button */}
-            <button
-              className="custom:hidden"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? <X className="h-6 w-6 text-black" /> : <Menu className="h-6 w-6 text-black" />}
-              <span className="sr-only">Toggle menu</span>
-            </button>
+            <div className="custom:hidden relative">
+              <button 
+                className="p-1"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <div className="relative w-5 h-5">
+                  <span className={cn(
+                    "absolute h-[2px] w-5 bg-current transform transition-all duration-300",
+                    isOpen ? "rotate-45 top-2" : "top-0"
+                  )} />
+                  <span className={cn(
+                    "absolute h-[2px] w-5 bg-current top-2 transform transition-all duration-300",
+                    isOpen ? "opacity-0" : "opacity-100"
+                  )} />
+                  <span className={cn(
+                    "absolute h-[2px] w-5 bg-current transform transition-all duration-300",
+                    isOpen ? "-rotate-45 top-2" : "top-4"
+                  )} />
+                </div>
+              </button>
+
+              {/* Mobile Menu Dropdown */}
+              <div className={cn(
+                "fixed right-4 top-[5.5rem] bg-white/95 backdrop-blur-sm shadow-lg rounded-2xl transform transition-all duration-300 w-[220px] border border-gray-100",
+                isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
+              )}>
+                <div className="flex flex-col py-2">
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.path}
+                      href={item.path}
+                      className={cn(
+                        "px-5 py-2.5 text-sm font-medium tracking-wide transition-colors",
+                        pathname === item.path
+                          ? "text-primary bg-gradient-to-r from-primary/5 to-primary/10"
+                          : "text-gray-700 hover:text-primary hover:bg-gradient-to-r hover:from-primary/5 hover:to-primary/10"
+                      )}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* Mobile menu */}
-      <div
-        className={cn(
-          "custom:hidden fixed inset-0 top-20 bg-background z-40 transform transition-transform duration-300 ease-in-out",
-          isOpen ? "translate-x-0" : "translate-x-full"
-        )}
-      >
-        <nav className="flex flex-col p-6 space-y-6 bg-white">
-          {navItems.map((item) => (
-            <Link
-              key={item.path}
-              href={item.path}
-              className="text-lg font-medium tracking-wider transition-colors hover:text-primary"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </nav>
       </div>
     </header>
   );
