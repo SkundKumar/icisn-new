@@ -46,7 +46,7 @@ export default function Header() {
           {/* Section 1: Logos */}
           <div className="flex items-center space-x-2 md:space-x-4">
             <div className="flex items-center space-x-1 md:space-x-2">
-              <img className="h-10 w-12 md:h-12 md:w-14 rounded-full" src="/uni.png" alt="University Logo" />
+              <img className="h-[42px] w-[42px] md:h-[50px] md:w-[50px] rounded-full object-cover" src="/uni.jpg" alt="University Logo" />
               <img className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-full" src="/logo.png" alt="ICISN Logo" />
             </div>
             <img className="h-8 w-20 md:h-12 md:w-32" src="https://www.springer.com/public/images/springer-logo.svg" alt="Springer Logo" />
