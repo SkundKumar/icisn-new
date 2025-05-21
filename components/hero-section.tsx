@@ -123,7 +123,7 @@ export default function HeroSection() {
                 </span>
               </a>
               <a
-                href="https://facebook.com/your-conference"
+                href="https://www.facebook.com/ICISN9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative text-white/90 hover:text-white transition-all duration-300 p-2 hover:bg-white/10 rounded-full hover:scale-110 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
