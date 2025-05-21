@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const bigShouldersDisplay = Big_Shoulders_Display({
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-XXXXXXXXXX" />
       </body>
     </html>
   );

@@ -40,7 +40,7 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 relative">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex items-center justify-between h-20">
           {/* Section 1: Logos */}
           <div className="flex items-center gap-5 custom:gap-2">
             <div className="flex items-center gap-1 custom:gap-2">
@@ -58,7 +58,7 @@ export default function Header() {
           </div>
 
           {/* Section 2: Navigation Links - Hidden on mobile */}
-          <nav className="hidden custom:flex space-x-4">
+          <nav className="hidden custom:flex items-center space-x-3">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -80,8 +80,8 @@ export default function Header() {
           </nav>
 
           {/* Section 3: Submit Button and Mobile Menu */}
-          <div className="flex items-center gap-0">
-             <RainbowButton className="text-white transition-all duration-300 ml-5">
+          <div className="flex items-center">
+            <RainbowButton className="text-white transition-all duration-300 ml-5">
               <a href="https://cmt3.research.microsoft.com/ICISN2026" className="font-medium">Submit Papers</a>
             </RainbowButton>
 
@@ -120,8 +120,12 @@ export default function Header() {
                       className={cn(
                         "px-5 py-2.5 text-sm font-medium tracking-wide transition-all duration-300 relative group",
                         pathname === item.path
-                          ? "text-primary after:absolute after:inset-0 after:bg-white/20 after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
-                          : "text-gray-700 hover:text-primary after:absolute after:inset-0 after:bg-white/20 after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
+                          ? scrolled || pathname !== "/"
+                            ? "text-black border-b-2 border-black after:absolute after:inset-0 after:bg-white/20 after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
+                            : "text-black border-b-2 border-gray-800 after:absolute after:inset-0 after:bg-white/20 after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
+                          : scrolled || pathname !== "/"
+                          ? "text-gray-900 after:absolute after:inset-0 after:bg-white/20 after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
+                          : "text-black after:absolute after:inset-0 after:bg-white/20 after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300"
                       )}
                       onClick={() => setIsOpen(false)}
                     >

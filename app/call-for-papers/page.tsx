@@ -46,6 +46,41 @@ export default function CallForPapersPage() {
                 <li>Knowledge Discovery</li>
                 <li>Data Mining</li>
                 <li>Machine Learning & Deep Learning</li>
+                <li>Language and Speech Processing</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Smart Electronic Systems</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Embedded Systems</li>
+                <li>IoT Devices and Systems</li>
+                <li>Smart Sensors and Actuators</li>
+                <li>Intelligent Control Systems</li>
+                <li>Hardware Security</li>
+                <li>VLSI Design</li>
+                <li>Digital Electronics</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Control and Automation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Robotics and Automation</li>
+                <li>Industrial Control Systems</li>
+                <li>Process Control</li>
+                <li>Intelligent Control Systems</li>
+                <li>System Identification</li>
+                <li>Adaptive Control</li>
+                <li>Fuzzy Logic Control</li>
               </ul>
             </CardContent>
           </Card>
