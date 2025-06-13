@@ -97,7 +97,7 @@ export default function UniversitySection() {
 
           <div ref={textRef} className=" text-justify  opacity-0 space-y-4 text-muted-foreground">
             <p>
-            The East Asia University of Technology (EAUT) is a multidisciplinary educational institution in Vietnam focusing on areas such as business management, information technology, electrical-electronics engineering technology, and construction engineering. EAUT officially began enrolling and training students for College and Undergraduate programs in the 2015-2016 academic year. 
+            East Asia University of Technology (EAUT) was officially established on December 9, 2008, under Decision No. 1777/QĐ-TTg issued by the Prime Minister. East Asia University of Technology is a multidisciplinary institution within the national education system, focusing on areas such as business management, information technology, electrical-electronics engineering technology, construction engineering, and so on. EAUT offers training programs at the College, Undergraduate, and Postgraduate levels, through various study modes including full-time, part-time, and transfer or pathway programs.
             </p>
 
             <h3 className="text-xl font-semibold mt-6">Core values of EAUT:</h3>

@@ -31,15 +31,25 @@ export default function ContactPage() {
             <div className="flex items-start space-x-4">
               <MapPin className="h-5 w-5 mt-0.5 text-muted-foreground" />
               <div>
-                <h3 className="font-semibold">Address</h3>
+                <h3 className="font-semibold">Campus 1</h3>
                 <p>
                   East Asia University of Technology
                   <br />
-                  Practical training facility
+                  Trinh Van Bo Street, Nam Tu Liem District, Hanoi City, Vietnam
                   <br />
-                  Establishment Decision No.: 1777/QD-TTg
+                  Email: p.nckh@eaut.edu.vn
                   <br />
-                  Trinh Van Bo Street, Nam Tu Liem, Hanoi
+                  Tel: +84 (0)988 068 075 (08.00-17.00 GMT + 7, Monday-Friday)
+                </p>
+                <h3 className="font-semibold mt-4">Campus 2</h3>
+                <p>
+                  East Asia University of Technology
+                  <br />
+                  Vo Cuong Ward, Bac ninh City, Bac ninh Province, Vietnam
+                  <br />
+                  Email: p.nckh@eaut.edu.vn
+                  <br />
+                  Tel: +84 (0)242 2345 999 (08.00-17.00 GMT + 7, Monday-Friday)
                 </p>
               </div>
             </div>
