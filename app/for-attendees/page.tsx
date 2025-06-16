@@ -232,14 +232,12 @@ const [activeTab, setActiveTab] = useState("registration");
           📄 <a href="https://www.springer.com/gp/authors-editors/conference-proceedings" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Springer Guidelines</a>
         </p>
         <p>
-          📂 <a href="https://example.com/latex-template" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">LaTeX Template</a>
+          📂 <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v8" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">LaTeX Template</a>
         </p>
         <p>
-          📂 <a href="https://example.com/word-template" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Word Template</a>
+          📂 <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238706/data/v5" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Word Template</a>
         </p>
-        <p>
-          📝 <a href="https://example.com/copyright-form" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Download Copyright Form</a>
-        </p>
+        
       </div>
 
       <h3 className="text-xl font-semibold mt-4">Submission Procedure</h3>
